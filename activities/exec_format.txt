@@ -1,0 +1,84 @@
+
+Activities:
+----------
+
+Task#1:
+Locate the "stdio.h" file in Windows and Ubuntu machine.
+
+Task#2:
+What does Visual studio solution file and project file contain?
+- Open .sln file using notepad.
+- Open .vcxproj file using notepad.
+
+Task#3:
+Run a Windows executable on Ubuntu.
+Run a Unix executable on Windows.
+What is the difference between windows executable and unix executable?
+What does the executable file contain?
+
+Task#4:
+Find out these using gcc compiler.
+- Pre-processed code for given file.
+- Assembly code for the given file.
+
+Task#5:
+Write a C program without main() function and run it.
+
+
+
+References:
+----------
+
+Sample C program in sum.c file
+
+#include <stdio.h>
+
+int main() {
+  int num1, num2, sum;
+  scanf("%d", &num1);
+  scanf("%d", &num2);
+  sum = num1 + num2;
+  printf("%d", sum);
+  return 0;
+}
+
+
+How to get free access to Ubuntu machine?
+blog post: http://bit.ly/freeubuntu
+
+How to create a sum.exe for sum.c program in Windows?
+Google it.
+
+How to create a sum.exe for sum.c program in Ubuntu?
+gcc sum.c -o sum.exe
+
+How to copy the sum.exe file to Ubuntu and try to run it?
+Upload to codenvy.io
+// to make it executable
+chmod +x sum.exe 
+// to run it
+./sum.exe
+
+
+How to copy the sum.exe file from Ubuntu and try to run it on Windows?
+Download the executable created on codenvy.io and run on windows machine
+
+Option for gcc to save intermediate compilation results.
+-save-temps
+
+Command
+gcc -save-temps sum.c -o sum.exe
+
+Check these files
+sum.i // after pre-processing
+sum.s // after converting to assembly code
+
+Find out how you can find similar compiler options in windows machine.  
+
+Executable file formats
+- https://en.wikipedia.org/wiki/Executable_and_Linkable_Format
+- https://en.wikipedia.org/wiki/Portable_Executable
+
+
+Note:
+The goal of this activity is to generate interesting questions in your mind.
